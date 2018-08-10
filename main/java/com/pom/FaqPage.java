@@ -38,4 +38,8 @@ public class FaqPage extends BasePage {
         btn_main.click();
         return new MainPage(driver);
     }
+    public ContactPage moveToContact(){
+        btn_cont.click();
+        return new ContactPage(driver);
+    }
 }
