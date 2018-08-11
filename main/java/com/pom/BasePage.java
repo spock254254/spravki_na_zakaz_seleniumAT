@@ -68,4 +68,35 @@ public abstract class BasePage extends PageObject{
     protected String getArticleTitle(WebElement article, final String cssSelector){
         return article.findElement(By.cssSelector(cssSelector)).getText();
     }
+
+    public MainPage moveToMainPage(){
+        btn_main.click();
+        return new MainPage(driver);
+    }
+
+    public FaqPage moveToFaq(){
+        btn_faq.click();
+        return new FaqPage(driver);
+    }
+    public GuaranteesPage moveToGuarantees(){
+        btn_guarantees.click();
+        return new GuaranteesPage(driver);
+    }
+    public LiderPage moveToLider(){
+        btn_lid.click();
+        return new LiderPage(driver);
+    }
+    public PayDiliveryPage moveToPayDiliv(){
+        btn_payDiliv.click();
+        return new PayDiliveryPage(driver);
+    }
+    public FeedBackPage moveToFeedBackPage(){
+        btn_feedback.click();
+        return new FeedBackPage(driver);
+    }
+    public ContactPage moveToContactPage(){
+        btn_cont.click();
+        return new ContactPage(driver);
+    }
+
 }

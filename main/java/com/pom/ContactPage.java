@@ -16,4 +16,6 @@ public class ContactPage extends BasePage {
     public String getArticleTitle(){
         return super.getArticleTitle(article,"header h1");
     }
+
+
 }

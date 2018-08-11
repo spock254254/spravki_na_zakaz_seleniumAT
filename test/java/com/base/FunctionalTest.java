@@ -1,4 +1,4 @@
-package com.spravki_na_zakaz;
+package com.base;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -26,6 +26,7 @@ public class FunctionalTest {
 
     @AfterClass
     public static void tearDown(){
+
         driver.close();
     }
 
